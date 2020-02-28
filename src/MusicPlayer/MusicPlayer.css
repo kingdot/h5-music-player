@@ -1,0 +1,85 @@
+.player-wrapper {
+    width: 300px;
+    margin: 100px auto 100px;
+}
+
+.audio-player {
+    display: none;
+}
+
+.player-control {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.progress-panel {
+    height: 30px;
+    width: 100%;
+}
+
+.trace-bg {
+    position: relative;
+    margin: 12px 0;
+    height: 5px;
+    background-color: #dddddd;
+    z-index: 0;
+}
+
+.progress-panel:hover {
+    cursor: pointer;
+}
+
+.progress-panel:hover .trace-pass {
+    box-shadow: 0 0 2px 1px #92d2ff;
+}
+
+.trace-bg .progress-btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -3px;
+    width: 7px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #1f7eff;
+    z-index: 3;
+}
+
+.progress-panel:hover .progress-btn {
+    display: block;
+}
+
+.trace-bg .trace-pass {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: dodgerblue;
+    z-index: 2;
+}
+
+
+.control-btn-wrapper {
+    margin-left: 10px;
+}
+
+.control-btn {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.control-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.download-progress {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 2px;
+}

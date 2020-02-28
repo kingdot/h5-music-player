@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MusicPlayer from "./MusicPlayer/MusicPlayer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <MusicPlayer src={"https://hanzluo.s3-us-west-1.amazonaws.com/music/zhiya.mp3"}/>
+            <MusicPlayer src={"https://hanzluo.s3-us-west-1.amazonaws.com/music/ziyounvshen.mp3"}/>
+            <MusicPlayer src={"https://hanzluo.s3-us-west-1.amazonaws.com/music/wuyuwuqing.mp3"}/>
+            <MusicPlayer src={"https://hanzluo.s3-us-west-1.amazonaws.com/music/suipian.mp3"}/>
+            <MusicPlayer src={"https://hanzluo.s3-us-west-1.amazonaws.com/music/yonghengdegangwan.mp3"}/>
+        </div>
+    );
 }
 
 export default App;
